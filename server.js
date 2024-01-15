@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors'); // Это должно быть в верхней части
+const cors = require('cors'); 
 const productRoutes = require('./src/routers/productRoutes');
 
 const app = express();
 
 app.use(cors({
   origin: 'http://localhost:8080'
-})); // CORS должен быть настроен до определения маршрутов
+}));
 
 app.use(express.json());
 
